@@ -341,7 +341,7 @@ with tab2:
         p_ket = st.selectbox("Pilih Keterangan Mutasi:", DAFTAR_KETERANGAN, key="p_ket")
         p_berat = st.number_input("Masukkan Berat Mutasi (Kg/Gram):", min_value=0.0, step=0.01, format="%.2f", key="p_berat")
 
-    if st.button("PROSES PINDAH BARANG", type="danger"):
+    if st.button("PROSES PINDAH BARANG", type="primary"):
         if p_asal == p_tujuan:
             st.error("Customer Asal dan Tujuan tidak boleh sama!")
         elif p_berat <= 0:
